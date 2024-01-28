@@ -866,6 +866,22 @@ margin-bottom: 16px;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.checkbox-one{
+
+}
+
+.text-privacy{
+color: #8E8F99;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+
+.text-privacy a{
+    color: #4D5AE5;
+    text-decoration: underline;
+}
+
 .send-btn{
     color:  #FFF;
         text-align: center;
@@ -926,6 +942,7 @@ margin-bottom: 16px;
 }
 
 .modal-icon-check{
+    display: flex;
 margin-bottom: 24px;
 }
 
@@ -934,15 +951,11 @@ margin-bottom: 24px;
 }
 
 .privacy-label{
-    color:  #8E8F99;
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.04em;
+   
 }
 
 .privacy-label a{
-    color:  #4D5AE5;
-        text-decoration: underline;
+    
 }
 
 .modal-check-span{
