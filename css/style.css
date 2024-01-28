@@ -61,10 +61,13 @@ header{
 
 
 .header-studio{
-list-style-type: none;
     /* display: flex; */
     display: none;
     gap: 40px;
+}
+
+.header-studio-address{
+
 }
 
 .header-menu{
@@ -113,23 +116,22 @@ position: relative;}
         margin: 0 auto;
 }
 
-.header-list:hover{
+.header-list:hover {
     color: #404bbf;
 }
 
-.header-list:focus{
-color:#404bbf;
+.header-list:focus {
+    color: #404bbf;
 }
 
 .address {
-    font-style: normal;
+    display: none;
 }
 
 .header-contacts {
 color:  #434455;
 
     font-size: 16px;
-font-style: normal;
     font-weight: 400;
     line-height: 1.5;
     
@@ -347,7 +349,6 @@ display: none;
 
 
 .strategy {
-list-style: none;
 /* display: flex;
 gap: 24px; */
 display: flex;
@@ -411,7 +412,6 @@ gap: 72px;
  }
 
 .team {
-    list-style: none;
     display: flex;
     flex-direction: column;
     gap: 72px;
@@ -750,6 +750,96 @@ border-top: none;
     fill: #FFFFFF;
     margin-left: 16px;
  }
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        max-width: 768px;
+    }
+
+    .header-container{
+        height: 72px;
+    }
+
+    .header-navigation {
+        display: flex;
+        align-items: center;
+        }
+
+    .header-logo{
+            margin-right: 120px;
+        }
+
+   .header-studio {
+    display: flex;
+    gap: 40px;
+}
+
+.address{
+    display: block;
+}
+
+.header-studio-address{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.header-contacts{
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+
+
+    .menu_btn{
+    display: none;
+}
+
+.business{
+    max-width: 768px;
+    height: 436px;
+    padding: 112px 0;
+    background-color: #2E2F42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/img-tab.jpg);
+}
+
+.title-business{
+            font-size: 56px;
+            line-height: 1.07;
+            max-width: 496px;
+            margin-bottom: 36px;
+
+}
+
+.strategy {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 72px 24px;
+}
+
+.strategy-title{
+    text-align: left;
+}
+
+.strategy-text{
+    width: 356px;
+}
+
+.team {
+    
+}
+
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
+    .business {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/img-tab-2x.jpg);
+        }
+    }
  /* ----------- */
  
 .backdrop{
